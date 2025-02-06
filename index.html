@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <title>Modpill – Focus music</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta name="description" content="An awesome retro jukebox you can tune to your mood! The perfect soundtrack for completing tasks or even enduring a party.">
+
+  <meta content="Modpill – Focus music" property='og:title'>
+  <meta content='https://github.com/mirthturtle/modpill/' property='og:url'>
+  <meta content='An awesome retro jukebox you can tune to your mood! The perfect soundtrack for completing tasks or even enduring a party.' property='og:description'>
+  <meta content='summary_large_image' name='twitter:card'>
+  <meta content='@mirthturtle' name='twitter:site'>
+  <meta content="Modpill – Focus music" name='twitter:title'>
+  <meta content='An awesome retro jukebox you can tune to your mood! The perfect soundtrack for completing tasks or even enduring a party.' name='twitter:description'>
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/modplayer.css">
+  <link rel="stylesheet" href="css/nightmode.css" id="nightmode-css" disabled="disabled">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <script type="text/javascript" src="js/favlist.js"></script>
+  <script type="text/javascript" src="js/modplayer.js"></script>
+  <script type="text/javascript" src="js/libopenmpt.js" async></script>
+  <script type="text/javascript" src="js/chiptune2.js" async></script>
+</head>
+
+<body>
+  <div id="content">
+    <div id="headline" class="banner">
+      <h1 class="crunchy">modpill</h1>
+      <h1>focus music</h1>
+    </div>
+
+    <div id="metadata" class="banner">
+      <span id="title">loading...</span>
+      <span id="artist"></span>
+    </div>
+
+    <div id="controls" class="banner">
+      <a id="loop" class="control disabled-button"></a>
+      <a id="play" class="control"></a>
+      <a id="next" class="control disabled-button"></a>
+      <br>
+
+      <div id="super-slider-box">
+        <div id="sliders" class="slider-panel">
+          <div>
+            <label for="tempo">Tempo</label>
+            <input id="tempo" type="range" min="0.5" max="1.5" step="0.01" disabled="disabled">
+          </div>
+          <div>
+            <label for="pitch">Pitch</label>
+            <input id="pitch" type="range" min="0.01" max="2" step="0.01" disabled="disabled">
+          </div>
+        </div>
+        <div id="slider-vertical" class="slider-panel">
+          <div>
+            <input id="volume" type="range" min="0.01" max="2" step="0.01" disabled="disabled">
+          </div>
+        </div>
+      </div>
+
+      <div class="reset-container">
+        <a id="modarchive-track-link" target="_blank">
+          <img src="img/file.png" class="link-img" id="track-file-image"></span>
+        </a>
+
+        <a id="reset-link" class="reset-link" href="javascript: void(0)">Reset</a>
+      </div>
+
+      <input id="sharelink-box" class="hidden" type="textarea"></input>
+    </div>
+
+    <footer>
+      <div class="banner footer-line">
+        <a id="source-link" href="https://github.com/mirthturtle/modpill" target="_blank">Source</a>
+        <span>•</span>
+        <a id="day-night-link" class="day-night-link" href="javascript: void(0)">☾</a>
+        <span>•</span>
+        <a id="playlist-link" href="https://modarchive.org/index.php?request=view_member_favourites&query=93325" target="_blank">Playlist</a>
+      </div>
+
+      <a href='https://www.mirthturtle.com' target='_blank'>
+        <img id="mirthturtle-logo" src="img/mirthturtle.png" alt="mirthturtle logo" class="mirthturtle-logo"/>
+      </a>
+
+    </footer>
+  </div>
+</body>
+
+</html>
